@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <h1>Register</h1>
+  
+  <% if (message) { %>
+    <p><%= message %></p>
+  <% } %>
+
+  <form action="/register" method="POST">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="aadhar">Aadhaar Card Number:</label>
+      <input type="text" id="aadhar" name="aadhar" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+
+  <p>
+    <h3>already have an account? Login <a href="">here</a></h3>
+  </p>
+</body>
+</html>
